@@ -1,24 +1,24 @@
 svg.theme__DEFAULT {
   viewport-fill: black;
-  fill: white;
+  fill: #d5d8da;
 }
 #Labels.theme__DEFAULT {
-  fill: #aaaaaa;
+  fill: #bbbbbb;
 }
 .theme__DEFAULT.color__cyan {
-  fill: #00aaaa;
+  fill: #25b2bc;
 }
 .theme__DEFAULT.color__green {
-  fill: #00aa00;
+  fill: #25b2bc;
 }
 .theme__DEFAULT.color__orange {
-  fill: #ffaa00;
+  fill: #fac29a;
 }
 .theme__DEFAULT.color__purple {
-  fill: #aa00aa;
+  fill: #b877db;
 }
 .theme__DEFAULT.color__red {
-  fill: #ff3333;
+  fill: #e95678;
 }
 
 

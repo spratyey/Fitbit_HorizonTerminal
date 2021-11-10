@@ -66,10 +66,13 @@ registerSettingsPage((props) => {
 
       <Section
         title="Feature requests and bug reports"
-        description="Made with <3 by JD Hartley"
+        description="Made with <3 by Pratyay Suvarnapathaki, using JD Hartley's original clockface"
       >
-        <Text><Text bold>Terminal</Text> is an open source clock face.</Text>
+        <Text><Text bold>TerminalHorizon</Text> is an open source clock face.</Text>
         <Text>Please report bugs and request features on GitHub:&nbsp;
+          <Link source="https://github.com/spratyey/terminal-for-fitbit">https://github.com/spratyey/terminal-for-fitbit</Link>
+        </Text>
+        <Text>Upstream URL:&nbsp;
           <Link source="https://github.com/jdhartley/terminal-for-fitbit">https://github.com/jdhartley/terminal-for-fitbit</Link>
         </Text>
       </Section>

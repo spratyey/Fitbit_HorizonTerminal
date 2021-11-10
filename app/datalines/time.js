@@ -22,16 +22,7 @@ export default new Dataline({
             hours = zeroPad(hours);
         }
 
-        const rawOffset = date.getTimezoneOffset();
-        const absoluteOffset = Math.abs(rawOffset);
-        const offset = [
-            (rawOffset < 0 ? '+' : '-'),
-            ('00' + Math.floor(absoluteOffset / 60)).slice(-2),
-            ':',
-            ('00' + (absoluteOffset % 60)).slice(-2),
-        ].join('');
-
-        this.valueRef.text = `${hours}:${mins}${meridiem} ${offset}`;
+        this.valueRef.text = `${hours}:${mins}${meridiem}`;
         swapClass(this.valueRef.root, 'color', 'green');
     },
     start() {

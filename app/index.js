@@ -58,7 +58,7 @@ onSettingsChange((settings) => {
     const username = (settings && settings.username) || 'user';
     const command = `${username}@${host}:~ $`;
 
-    topLabel.text = `${command} now`;
+    topLabel.text = `${command} stats`;
     bottomLabel.text = command;
 
 

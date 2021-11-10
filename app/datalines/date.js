@@ -16,8 +16,8 @@ export default new Dataline({
 
         this.valueRef.text = [
             days[date.getDay()],
-            months[date.getMonth()],
             date.getDate(),
+            months[date.getMonth()],
             date.getFullYear(),
         ].join(' ');
         swapClass(this.valueRef.root, 'color', 'cyan');

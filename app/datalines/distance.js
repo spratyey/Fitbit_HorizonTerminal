@@ -1,7 +1,6 @@
 import { me } from 'appbit';
 import clock from 'clock';
 import { today } from 'user-activity';
-import { units } from 'user-settings';
 
 import Dataline from './Dataline';
 import { swapClass } from '../utils';
@@ -15,8 +14,8 @@ export default new Dataline({
     },
     updateValue() {
         const meters = today.adjusted.distance || 0;
-        const raw = meters / (units.distance === 'us' ? 1609 : 1000);
-        const unit = units.distance === 'us' ? 'mi' : 'km';
+        const raw = meters;
+        const unit = 'm';
 
         this.valueRef.text = `${(Math.round(raw * 100) / 100).toFixed(2)} ${unit}`;
         swapClass(this.valueRef.root, 'color', 'orange');
